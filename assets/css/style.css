@@ -124,23 +124,23 @@ header {
     background-color: var(--hero-image);
 }
 
-header, .row {
+header .row {
     padding: 1rem 0;
     color: var(--light);
 }
 
-a {
+header a {
     text-decoration: none;
     color: var(--light);
     padding: 0 1rem;
 }
 
-.btn-menu {
+button {
     color: var(--dark);
     background-color: var(--light);
-    border-radius: 50%;
-    border: 1px solid var(--dark);
-    padding: 0.5rem;
+    border-radius: 20px;
+    border: none;
+    padding: 0.5rem 1rem;
     text-align: center;
     text-decoration: none;
 }
@@ -166,7 +166,7 @@ main .contents [class*='col-5'] {
     padding: 2rem;
 }
 
-main .contents > .row {
+.white, .gray {
     padding: 7.5rem 0;
 }
 
@@ -192,37 +192,43 @@ main .action {
     padding: 3rem;
 }
 
-/* #region Debug */
-
 /* footer */
-.debug footer {
+footer {
     background-color: #23272A;
-    padding: 1rem 0;
+    padding: 4rem 0;
 }
 
-
-.debug .navigation_footer [class*='col-3'] {
-    background-color: rgb(38, 145, 28);
-    height: 350px;
-}
-
-.debug .links_website [class*='col-3'] {
-    background-color: rgb(234, 153, 47);
-    height: 350px;
-    border: 2px solid black;
-}
-
-.debug hr {
+hr {
     margin: 2rem 0;
+    color: var(--primary);
 }
 
-.debug .logo_footer {
+.logo_footer {
     padding: 1rem 0;
-    background-color: antiquewhite;
 }
 
-.debug .container span {
-    background-color: chartreuse;
-    border: 2px solid black;
+.flex-column {
+    flex-direction: column;
+    display: flex;
+    gap: 1rem;
 }
-/* #endregion Debug */
+
+footer a {
+    text-decoration: none;
+    color: var(--light);
+}
+
+footer h3 {
+    color: var(--primary);
+    padding-right: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+footer h4 {
+    color: var(--primary);
+}
+
+.primary_color {
+    background-color: var(--primary);
+    color: var(--light);
+}
