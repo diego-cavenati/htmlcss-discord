@@ -31,7 +31,8 @@ body{
 }
 
 h1 {
-    font-size: 1.3rem;
+    font-size: 2.5rem;
+    padding: 1rem 0;
 }
 
 h2 {
@@ -144,74 +145,39 @@ header button {
     text-decoration: none;
 }
 
-
-
-/* contents */
-.debug > main .contents [class*='col-8'] {
-
+/* heroimage */
+.heroimage {
+    background-image: url('../img/jumbo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.debug > main .contents [class*='col-4'] {
+main .heroimage > .claim {
+    color: var(--light);
+    margin: auto;
+    padding: 5rem;
+}
+
+/* contents */
+main .contents [class*='col-4'] {
     color: var(--dark);
 }
 
-.debug > main .row {
+main .row {
     padding: 3rem 0;
 }
 
-.debug .gray {
+.gray {
     background-color: var(--light-gray);
 }
 
-/* #region Debug */
-
-/* heroimage */
-.debug > main .heroimage {
-    height: 450px;
-    background-color: aquamarine;
-    padding: 3rem;
-}
-
-.debug > main .heroimage > .claim {
-    height: 350px;
-    background-color: #EE82EE;
-    margin: auto;
-    width: 800px;
-}
-
-/* contents */
-/* .debug > main .contents [class*='col-8'] {
-    height: 350px;
-    background-color: #1E90FF;
-    border: 1px dashed black;
-}
-
-.debug > main .contents [class*='col-4'] {
-    height: 350px;
-    background-color: #FFC0CB;
-    border: 1px dashed black;
-}
-
-.debug > main .row {
-    padding: 3rem 0;
-}
-
-.debug .gray {
-    background-color: gray;
-} */
-
 /* action */
-.debug > main .action {
-    background-color: aquamarine;
+main .action {
     padding: 3rem;
 }
 
-.debug > main .action > .end-claim {
-    height: 550px;
-    background-color: royalblue;
-    margin: auto;
-    width: 800px;
-}
+/* #region Debug */
 
 /* footer */
 .debug footer {
